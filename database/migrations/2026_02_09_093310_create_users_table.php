@@ -11,19 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('staff', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('name');
-            $table->striing('password');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->enum('role', ['HR', 'Employee']);
             $table->timestamps();
-             });
+    });
     }
 
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
-        Schema::dropIfExists('staff');
+        Schema::dropIfExists('users');
     }
 };
-
-
-
