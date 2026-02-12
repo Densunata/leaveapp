@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\LeaveModel;
+use App\Models\Paldo;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class LeaveModelController extends Controller
+class PaldoController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view("paldo.index");
     }
 
     /**
@@ -35,7 +35,7 @@ class LeaveModelController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(LeaveModel $leaveModel)
+    public function show(Paldo $paldo)
     {
         //
     }
@@ -43,7 +43,7 @@ class LeaveModelController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(LeaveModel $leaveModel)
+    public function edit(Paldo $paldo)
     {
         //
     }
@@ -51,7 +51,7 @@ class LeaveModelController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, LeaveModel $leaveModel)
+    public function update(Request $request, Paldo $paldo)
     {
         //
     }
@@ -59,7 +59,7 @@ class LeaveModelController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(LeaveModel $leaveModel)
+    public function destroy(Paldo $paldo)
     {
         //
     }
