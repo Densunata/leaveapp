@@ -9,16 +9,7 @@
     </a>
 
 
-    <form class="form-inline ml-auto" method="GET" action="#">
-        <input class="form-control mr-2"
-               type="search"
-               name="search"
-               placeholder="Search..."
-               aria-label="Search">
-        <button class="btn btn-outline-primary" type="submit">
-            Search
-        </button>
-    </form>
+
 
     <button class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarNav" aria-controls="navbarNav"

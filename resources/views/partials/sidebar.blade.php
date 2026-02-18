@@ -5,7 +5,7 @@
   <div class="collapse d-lg-block sidebar" id="sidebarMenu">
     <a href="{{ route('dashboard.index') }}"
        class="{{ request()->routeIs('dashboard.index') ? 'active' : '' }}">
-        Dashboard
+        Overview
     </a>
 
     <a href="{{ route('attendance.index') }}"

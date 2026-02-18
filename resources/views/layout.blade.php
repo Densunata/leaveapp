@@ -90,14 +90,16 @@
 
   </style>
 </head>
-<body>
+
+<body class="pt-5">
 
 
     @include('partials.header')
     @include('partials.sidebar')
 
-
+<div class="container mt-5">
     @yield('content')
+</div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
